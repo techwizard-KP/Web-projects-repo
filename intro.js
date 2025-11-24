@@ -31,6 +31,8 @@ arr.forEach(button => {
             string += e.target.innerHTML;
             input.value = string;
         }
+        inputbox.scrollLeft = inputbox.scrollWidth;
+
     });
        
 });
@@ -69,4 +71,6 @@ document.addEventListener("keydown", (e) => {
         input.value = string;
         console.log(string, input.value, "hello namstee");
     }
+    inputbox.scrollLeft = inputbox.scrollWidth;
+
 });
